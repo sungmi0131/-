@@ -17,9 +17,9 @@ setInterval(function() {
     idx = 0; 
   }
 
-  $('.slide-wrap').animate({ 'left': '-100%' }, function () {
+  $('.slide-wrap').animate({ 'top': '-100%' }, function () {
     $('.slide:first').appendTo('.slide-wrap')
-    $('.slide-wrap').css({ 'left': '0%' }).eq(idx)
+    $('.slide-wrap').css({ 'top': '0%' }).eq(idx)
 })
   
 }, 3000); 

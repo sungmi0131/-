@@ -176,7 +176,9 @@ nav a {
 
 .slide-container {
     width: calc(100% - 200px - 400px);
+    height: 800px;
     overflow: hidden;
+    border: 1px solid #000;
 }
 
 .slide-wrap {
