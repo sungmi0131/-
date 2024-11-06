@@ -1,0 +1,262 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: inherit;
+}
+
+.flex {
+    display: flex;
+}
+
+.just-s {
+    justify-content: space-between;
+}
+
+.just-c {
+    justify-content: center;
+}
+
+.align-c {
+    align-items: center;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 120px);
+}
+
+:root {
+    --main-color: #db1717;
+    --sub-color: #df9090;
+}
+
+/*header*/
+header {
+    width: 200px;
+
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    border-bottom: 1px solid #db1717;
+}
+
+.main-menu>a {
+    padding: 10px;
+}
+
+.main-menu:hover>a {
+    color: #fff;
+    background: var(--main-color);
+}
+
+.sub-menu {
+    display: none;
+}
+
+.sub-menu a {
+    display: block;
+    padding: 10px;
+}
+
+.sub-menu li:hover a {
+    color: #fff;
+    background: var(--sub-color);
+
+}
+
+.spot {
+    text-align: center;
+}
+
+.spot ul {
+    gap: 10px;
+    padding: 50px 30px;
+    position: absolute;
+    top: 60%;
+}
+
+.spot ul li {
+    color: #db1717;
+    border-bottom: 2px solid #000;
+}
+
+.spot li:hover>a {
+    text-decoration: underline;
+}
+
+/*contents*/
+.contents {
+    width: 400px;
+
+}
+
+.banner {
+    height: 15%;
+    border-bottom: 1px dotted #000;
+    padding: 10px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.notice,
+.gallery {
+    border-bottom: 1px dotted #000;
+    height: 35%;
+}
+
+
+.notice h2,
+.gallery h2 {
+    display: inline-block;
+    border: 2px solid #000;
+    border-bottom: 1px solid #fff;
+    padding: 5px;
+}
+
+.notice ul {
+    border-top: 2px solid #000;
+    padding: 10px;
+}
+
+.notice li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.notice li a {
+    display: block;
+    padding: 5px;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.notice li:hover {
+    background: #ccc;
+}
+
+.notice h2:hover,
+.gallery h2:hover {
+    background: #db1717;
+    color: #fff;
+}
+
+.gallery ul {
+    justify-content: space-around;
+    text-align: center;
+    border-top: 2px solid #000;
+    padding: 10px;
+}
+
+.link {
+    height: 15%;
+}
+
+.link ul {
+    gap: 13px;
+    text-align: center;
+    padding: 15px;
+}
+
+/*slide*/
+.slide-container {
+    width: calc(100% - 200px - 400px);
+    overflow: hidden;
+}
+
+.slide-wrap {
+    position: relative;
+}
+
+.slide {
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    background: var(--sub-color);
+}
+
+footer .ft-contents {
+    width: 80%;
+}
+
+.ft-contents .f-menu {
+    margin-bottom: 10px;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    padding: 50px;
+    background: #fff;
+}
+
+.popup h3,
+.popup p {
+    border-bottom: 2px dotted #ccc;
+    padding: 20px;
+}
+
+.popup a {
+    display: block;
+    position: absolute;
+    background: #df9090;
+    right: 0%;
+    top: 0%;
+    padding: 10px;
+    color: #fff;
+
+}
